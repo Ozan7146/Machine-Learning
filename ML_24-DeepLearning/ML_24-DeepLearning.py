@@ -75,10 +75,11 @@ classifier.add(Dense(1, init = 'uniform', activation = 'sigmoid'))
 
 #Sinir ağının(Neural Network'ün) nasıl çalışacağını keras kütüphanesi üzerinden pythona anlatıyoruz.
 #Farklı optimizer'ları keras'ın dokümantosyonu üzerinden bakabilirsin
-#Keras tensorflow üzerinden çalıştığı için bazen tensorflow dokğmantasyonunu da okuyacaksın
-#'adam' aslında stochastic gradient descendent'in bir versiyonu ve sinapsiler üzerindeki değerleri nasıl optimize edeceğimize yarıyor.
+#Keras tensorflow üzerinden çalıştığı için bazen tensorflow dokümantasyonunu da okuyacaksın
+#'adam' aslında stochastic gradient descendent'in bir versiyonu ve sinapsisler üzerindeki değerleri nasıl optimize edeceğimizi gösteriyor.
 # The purpose of loss functions is to compute the quantity that a model should seek to minimize during training.
 classifier.compile(optimizer = 'adam', loss =  'binary_crossentropy' , metrics = ['accuracy'] )
+
 
 #Makine öğrenmesi kısmını verdik
 #epochs kaç aşamada öğreneceğidir.
